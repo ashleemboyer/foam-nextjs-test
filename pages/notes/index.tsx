@@ -8,6 +8,9 @@ interface Props {
 
 const NotesIndex = ({ slugs }: Props) => (
   <>
+    <nav>
+      <a href="/">Back home</a>
+    </nav>
     <h1>Notes Index</h1>
     <nav>
       <ul>

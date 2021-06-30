@@ -8,6 +8,17 @@ interface Props {
 
 const Note = ({ content, frontmatter }: Props) => (
   <>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Back home</a>
+        </li>
+        <li>
+          <a href="/notes">All Notes</a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
     <h1>{frontmatter.title}</h1>
     <div dangerouslySetInnerHTML={{ __html: content }} />
   </>
